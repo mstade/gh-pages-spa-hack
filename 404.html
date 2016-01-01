@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-  <script>console.log(window.location)</script>
+  <script>
+    var url = window.location.protocol + '//' + window.location.host + '/#' + window.location.pathname;
+    window.location.replace(url);
+  </script>
   </body>
 </html>
